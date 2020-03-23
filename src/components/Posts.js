@@ -5,14 +5,6 @@ class Posts extends Component {
 		posts: []
 	}
 
-	componentDidMount() {
-		fetch('https://jsonplaceholder.typicode.com/posts')
-		.then(res => res.json())
-		.then(data => {
-			this.setState({posts: data})
-		})
-	}
-
 	render() {
 		const { posts } = this.state;
 
